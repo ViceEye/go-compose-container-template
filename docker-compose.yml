@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: backend-service:latest
+    volumes:
+      - "./:/app"
